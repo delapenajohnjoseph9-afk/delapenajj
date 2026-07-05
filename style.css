@@ -1,0 +1,102 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+html{font-size:62.5%;scroll-behavior:smooth}
+body{background:#0b0b0b;color:#fff;overflow-x:hidden}
+header{position:fixed;top:0;left:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:18px 8%;background:rgba(0,0,0,.65);backdrop-filter:blur(10px);z-index:1000}
+.logo{font-size:3rem;color:#e74c3c;font-weight:800}
+nav a{color:#fff;text-decoration:none;margin-left:3rem;font-size:1.7rem}
+nav a:hover,.active{color:#e74c3c}
+#menu-toggle{display:none}.menu-icon{display:none;font-size:3rem;color:#fff;cursor:pointer}
+.hero{min-height:100vh;padding:12rem 8% 5rem;display:flex;align-items:center;justify-content:space-between;gap:6rem}
+.hero-content{flex:1}.welcome{color:#e74c3c;letter-spacing:3px;font-size:1.4rem}
+.hero h1{font-size:5.8rem;margin:1rem 0}.hero span{color:#e74c3c}.hero h3{font-size:2.8rem}
+.hero-text{font-size:1.8rem;color:#ccc;line-height:1.8;max-width:650px;margin:2rem 0}
+.hero-image img{width:360px;border-radius:50%;border:6px solid #e74c3c;box-shadow:0 0 35px rgba(231,76,60,.5)}
+.hero-buttons{display:flex;gap:2rem;margin-top:3rem}
+.btn,.btn-outline{text-decoration:none;padding:1.2rem 3rem;border-radius:40px;font-size:1.6rem;transition:.3s}
+.btn{background:#e74c3c;color:#fff}.btn:hover{background:#fff;color:#e74c3c}
+.btn-outline{border:2px solid #e74c3c;color:#fff}.btn-outline:hover{background:#e74c3c}
+.about{padding:8rem 8%;background:#121212}
+.about-container{display:flex;gap:5rem;align-items:center;max-width:1200px;margin:auto}
+.about-image img{width:320px;border-radius:20px;box-shadow:0 0 25px rgba(231,76,60,.35)}
+.about-content h2{font-size:4.5rem;color:#e74c3c;margin-bottom:2rem}
+.about-content p{font-size:1.8rem;color:#d2d2d2;line-height:1.9}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;margin-top:3rem}
+.card{background:#1a1a1a;padding:2rem;border-radius:16px;border:1px solid #333;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:#e74c3c}
+.card h3{font-size:2rem;color:#e74c3c;margin-bottom:1rem}.card p{font-size:1.6rem}
+footer{text-align:center;padding:4rem 2rem;background:#0b0b0b}
+footer h3{font-size:2.4rem}.copyright{margin-top:1rem;color:#999;font-size:1.4rem}
+@media(max-width:900px){
+.menu-icon{display:block}
+nav{display:none;position:absolute;top:100%;right:5%;background:#1a1a1a;border-radius:12px;padding:1rem}
+nav a{display:block;margin:1.5rem}
+#menu-toggle:checked~nav{display:block}
+.hero,.about-container{flex-direction:column;text-align:center}
+.hero-image img,.about-image img{width:260px}
+.cards{grid-template-columns:1fr}
+.hero h1{font-size:4.2rem}
+}
+/* CONTACT SECTION */
+
+.contact{
+    padding: 8rem 8%;
+    background: #0b0b0b;
+}
+
+.contact-container{
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-container h2{
+    font-size: 4.5rem;
+    color: #e74c3c;
+    margin-bottom: 2rem;
+}
+
+.contact-text{
+    font-size: 1.8rem;
+    color: #cfcfcf;
+    margin-bottom: 4rem;
+    line-height: 1.8;
+}
+
+.contact-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 2rem;
+}
+
+.contact-card{
+    background: #1a1a1a;
+    padding: 3rem;
+    border-radius: 15px;
+    border: 1px solid #333;
+    transition: .3s ease;
+}
+
+.contact-card:hover{
+    transform: translateY(-8px);
+    border-color: #e74c3c;
+    box-shadow: 0 0 20px rgba(231,76,60,.35);
+}
+
+.contact-card h3{
+    font-size: 2.2rem;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+.contact-card p{
+    font-size: 1.7rem;
+    color: #ddd;
+}
+.contact-card a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-card a:hover{
+    color: #e74c3c;
+}
